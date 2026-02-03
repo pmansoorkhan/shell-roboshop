@@ -2,7 +2,7 @@
 
 SG_ID="sg-004646843127c8854" # replace with the particular id (whichever you like)
 AMI_ID="ami-0220d79f3f480ecf5"
-
+IP=$IP
 for instance in $@
 
 do
@@ -29,7 +29,7 @@ do
           --output text"
          )
     fi
-    echo " IP address: $IP "
+        echo " IP address: $IP "
 done
 
 
