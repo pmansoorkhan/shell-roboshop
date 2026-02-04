@@ -35,8 +35,8 @@ do
         fi
         echo " IP address:: $IP "
 
-        aws route53 change-resource-record-sets 
-	    --hosted-zone-id '$ZONE_ID' 
+        aws route53 change-resource-record-sets \
+	    --hosted-zone-id '$ZONE_ID' \
 	    --change-batch '
 
             {
@@ -56,8 +56,8 @@ do
                     }
                     }
                 ]
-            } 
-         '
+            }' 
+         
         echo " record updated for $instance "
 
 done
