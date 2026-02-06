@@ -1,7 +1,5 @@
 #!/bin/bash
 
-ID="$1"
-
 ALLOWED_IDS=(
   "i-093dd623cdaece07a"
   "i-0df98fd7bb73b70af"
